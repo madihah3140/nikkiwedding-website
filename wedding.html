@@ -10,11 +10,10 @@
 
   <style>
     body {
-	background-color: #D8D8D8;
-      background-image: 	url('https://images.template.net/73549/Free-wedding-invitation-floral-background-portrait.jpg');
+      margin: 0;
+      padding: 0;
+      background: url('https://images.template.net/73549/Free-wedding-invitation-floral-background-portrait.jpg') no-repeat center center fixed;
       background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center center;
     }
 	.layered-text {
       position: relative;
@@ -32,10 +31,11 @@
       z-index: 2;
     }
 
-	@media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 600px) {
       body {
-        padding: 10px;
+        background-size: contain;
       }
+    }
       
       header, footer {
         padding: 5px;
